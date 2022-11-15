@@ -1,0 +1,58 @@
+.moresell {
+    padding: 40px 88px;
+    color: #232f3e;
+  }
+  .moresell-warpper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    justify-content: center;
+  }
+  .moresell__title {
+    text-align: center;
+    font-size: 80px;
+    font-weight: bold;
+  }
+  .moresell__cart{
+      width: 588px;
+      box-shadow: 1px 3px 7px rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+      list-style: none;
+  }
+  .item__svg{
+    width: 60px;
+    height: 60px;
+  }
+  .item__title{
+    font-size: 32px;
+    line-height: 38px;
+    margin-top: 8px;
+  }
+  .item__info{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #232f3ec3;
+    margin-top: -10px;
+    padding-right: 14px;
+    
+  }
+  .item__link{
+    padding-top: 20px;
+    padding-bottom: 40px;
+    color: #121820;
+    font-weight: 500;
+    position: relative;
+  }
+  .item__link::after{
+    content: "→";
+    position: absolute;
+    left: 30%;
+    font-weight: bold;
+    bottom: 50%;
+    /* color: rgb(0, 204, 255); */
+    font-size: 24px;
+    transform: rotate(-45deg);
+  }
+  
+  
