@@ -1,0 +1,56 @@
+.ecommerce{
+    padding: 40px 80px;
+    color: #232f3e;;
+    background-color: #f5fbfc;;
+   
+}
+.ecommerce__cart .cart__list{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.ecommerce__title h1{
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+}
+.ecommerce__cart .cart__list .list__items{
+    max-width: 354px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.209);
+    border-radius: 10px;
+    height:414px ;
+    padding: 20px 26px;
+    background-color: #fff;
+}
+.ecommerce__cart .cart__list .list__items h2{
+    font-size: 38px;
+    margin-top: 10px;
+    margin-left: 6px;
+}
+
+.ecommerce__cart .cart__list .list__items img{
+    max-width: 100px;
+}
+.ecommerce__cart .cart__list .list__items p{
+    color: #6c7778;
+    margin-top: -10px;
+    padding-bottom: 16px;
+}
+.ecommerce__cart .cart__list .list__items .cart__item-link{
+    font-size: 14px;
+    color: #232f3e;
+    font-weight: bold;
+    cursor: pointer;
+}
+.ecommerce__info{
+    padding: 40px 40px;
+    text-align: center;
+    font-size: 18px;
+}
+.ecommerce__info span{
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 10px;
+}
