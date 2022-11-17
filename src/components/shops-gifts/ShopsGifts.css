@@ -43,6 +43,7 @@
   width: 50px !important;
   height: 4px;
   background-color: rgb(215, 215, 215);
+  display: none;
 }
 .shops__cart .cart__item img {
   min-width: 200px;
