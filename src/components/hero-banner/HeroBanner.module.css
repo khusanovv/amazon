@@ -1,5 +1,5 @@
-.banner{
-  width: 80%;
+.banner {
+  width: 98%;
   height: 700px;
   background-color: #ffff;
   margin: 0px auto;
@@ -7,7 +7,7 @@
   display: flex;
 }
 
-.image__container{
+.image__container {
   width: 100%;
   align-items: flex-start;
   display: flex;
@@ -17,26 +17,27 @@
   position: relative;
 }
 
-.banner__image{
+.banner__image {
   width: 100%;
-  -webkit-mask-image: linear-gradient(180deg,rgb(72, 72, 72) 20%,#00000000);
-  mask-image: linear-gradient(180deg,#000 30%,#00000000);
+  -webkit-mask-image: linear-gradient(180deg, rgb(72, 72, 72) 20%, #00000000);
+  mask-image: linear-gradient(180deg, #000 30%, #00000000);
 }
 
-.image__coontainer::after{
+.image__coontainer::after {
   position: absolute;
-  content: '';
+  content: "";
   height: 280px;
   width: 100%;
-  background: rgb(5,5,5);
-background: linear-gradient(180deg, rgba(5,5,5,0) 0%, #EAEDED 78%);
+  background: rgb(5, 5, 5);
+  background: linear-gradient(180deg, rgba(5, 5, 5, 0) 0%, #eaeded 78%);
   bottom: 0;
 }
 
-.left_btn{
+.left_btn {
   width: 60px;
   height: 250px;
   position: absolute;
+  top: 25%;
   left: 5px;
   font-size: 40px;
   background-color: transparent;
@@ -46,11 +47,12 @@ background: linear-gradient(180deg, rgba(5,5,5,0) 0%, #EAEDED 78%);
   z-index: 5;
 }
 
-.right_btn{
+.right_btn {
   width: 60px;
   height: 250px;
   border-radius: 3px;
   position: absolute;
+  top: 25%;
   right: 5px;
   font-size: 40px;
   background-color: transparent;
@@ -59,12 +61,13 @@ background: linear-gradient(180deg, rgba(5,5,5,0) 0%, #EAEDED 78%);
   z-index: 5;
 }
 
-.right_btn:focus, .left_btn:focus{
+.right_btn:focus,
+.left_btn:focus {
   color: #fff;
-  box-shadow: inset 0 0 0 2px #fff, inset 0 0 0 4px #008296;;
+  box-shadow: inset 0 0 0 2px #fff, inset 0 0 0 4px #008296;
 }
 
-.dots{
+.dots {
   display: flex;
   position: absolute;
   bottom: 300px;
@@ -72,7 +75,7 @@ background: linear-gradient(180deg, rgba(5,5,5,0) 0%, #EAEDED 78%);
   transform: translateX(-50%);
 }
 
-.point{
+.point {
   width: 10px;
   height: 10px;
   background-color: #a2a2a2;
