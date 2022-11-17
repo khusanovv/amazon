@@ -1,0 +1,55 @@
+.shops {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 1460px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.409);
+}
+.shops button {
+  display: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.shops:hover button {
+  display: block;
+}
+.shops .shops__prev {
+  position: absolute;
+  left: 0px;
+  top: 45%;
+  width: 30px;
+  height: 60px;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  box-shadow: 0px 0px 4px black;
+}
+.shops .shops__next {
+  position: absolute;
+  right: 0px;
+  top: 45%;
+  width: 30px;
+  height: 60px;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  box-shadow: 0px 0px 10px black;
+}
+.shops__cart {
+  display: flex;
+  max-width: 1420px;
+  overflow-x: scroll;
+  gap: 14px;
+  position: relative;
+}
+.shops__cart::-webkit-scrollbar {
+  width: 50px !important;
+  height: 4px;
+  background-color: rgb(215, 215, 215);
+}
+.shops__cart .cart__item img {
+  min-width: 200px;
+  height: 160px;
+}
+.top__sell img {
+  border-radius: 50%;
+  width: 200px !important;
+  height: 200px !important;
+}
