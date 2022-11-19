@@ -1,4 +1,4 @@
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -17,7 +17,8 @@ a {
 }
 body {
   min-height: 100vh;
-  font-family: "Averia Libre", display;
+  font-family: 'Averia Libre', display;
+  background-color: #eaeded;
 }
 
 :root {
