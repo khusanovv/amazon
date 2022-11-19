@@ -45,7 +45,7 @@
   background-color: rgb(215, 215, 215);
   display: none;
 }
-.shops__cart .cart__item img {
+.cart__item img {
   min-width: 200px;
   height: 160px;
 }
@@ -53,4 +53,7 @@
   border-radius: 50%;
   width: 200px !important;
   height: 200px !important;
+}
+.movie__shops .shops__cart .cart__item img {
+  max-width: 140px !important;
 }
