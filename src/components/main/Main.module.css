@@ -1,14 +1,25 @@
-.main{
+.main {
   /* width: 1440px; */
   height: auto;
-  margin-top:  -380px;
+  margin-top: -380px;
   z-index: 10;
   position: relative;
 }
 
-.wrapper{
+.wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
-  gap: 20px;  
+  gap: 20px;
+}
+@media screen and (max-width: 1100px) {
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .wrapper {
+    grid-template-columns: auto;
+  }
 }

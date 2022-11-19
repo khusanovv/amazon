@@ -1,21 +1,22 @@
 .card {
-	padding: 0 10px;
-	max-width: 290px;
-	height: 385px;
-	background-color: #fff;
-	overflow: hidden;
+  padding: 0 10px;
+  max-width: 350px;
+  height: 385px;
+  background-color: #fff;
+  overflow: hidden;
 }
 
 .cardImgs {
-	width: 100%;
-	padding: 0 7px;
+  width: 100%;
+  padding: 0 7px;
+  margin: 0 auto;
 }
 
 .linkBoxs {
-	width: 50%;
+  width: 50%;
 }
 
-.card p{
+.card p {
   margin-bottom: 20px;
   padding: 2px 10px;
   font-size: 12px;
@@ -23,40 +24,51 @@
 }
 
 .cardBox {
-	display: flex;
-	flex-wrap: wrap;
-	padding: 35px 0;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 35px 0;
 }
 
 .linkBox {
-	width: 250px;
-	padding: 0 10px;
+  width: 250px;
+  padding: 0 10px;
 }
 
 .cardImg {
-	padding: 10px 0;
-	width: 250px;
-	height: 303px;
-	object-fit: cover;
+  padding: 10px 0;
+  width: 250px;
+  height: 303px;
+  object-fit: cover;
 }
 
 .card h2 {
-	padding: 13px 10px;
-	max-height: 54px;
-	font-size: 21px;
-	line-height: 27.3px;
+  padding: 13px 10px;
+  max-height: 54px;
+  font-size: 21px;
+  line-height: 27.3px;
 }
 
 .urlLink {
   padding: 0 10px;
-	text-decoration: none;
-	color: #007185;
+  text-decoration: none;
+  color: #007185;
   font-size: 13px;
-  transition: .3s;
+  transition: 0.3s;
 }
 
-.urlLink:hover{
+.urlLink:hover {
   text-decoration: underline;
-  color: #C7511F;
+  color: #c7511f;
   cursor: pointer;
+}
+@media screen and (max-width: 1100px) {
+  .card {
+    margin: 0 auto;
+    width: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .card {
+    width: 100%;
+  }
 }

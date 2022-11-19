@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import c from "./HeroBanner.module.css";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import { useEffect } from "react";
-import { v4 as uuidv4 } from 'uuid';
+import { v4 as uuidv4 } from "uuid";
 
 const Banner = () => {
   const [imageCount, setImageCount] = useState(0);

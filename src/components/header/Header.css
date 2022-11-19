@@ -72,7 +72,6 @@ form {
   border-right: 1px solid #00000027;
   border-bottom-left-radius: 3px;
   border-top-left-radius: 3px;
-
 }
 .filter option {
   font-size: 14px;
@@ -235,4 +234,37 @@ form {
 .navbar-nav-link a {
   letter-spacing: -0.5px;
   font-weight: 300;
+}
+@media screen and (max-width: 767px) {
+  form {
+    display: none;
+  }
+  .location {
+    display: none;
+  }
+  .login {
+    display: none;
+  }
+  .order {
+    display: none;
+  }
+  .header {
+    background-color: #232f3e;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #232f3e;
+  }
+  .card-link__text {
+    font-size: 11px;
+    font-weight: 400;
+  }
+  .navbar-nav-link {
+    font-size: 11px;
+  }
+  .navbar {
+    background-color: #232f3e;
+    border-top: 1px solid rgb(134, 134, 134);
+  }
 }

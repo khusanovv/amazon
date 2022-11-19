@@ -1,24 +1,20 @@
-import React from 'react';
-import './Header.css';
-import logo from '../../assets/images/logo.png';
-import { useLocation } from 'react-router-dom';
+import React from "react";
+import "./Header.css";
+import logo from "../../assets/images/logo.png";
+import { useLocation } from "react-router-dom";
 
-function Header({isSidebarOpen, setIsSidebarOpen}) {
+function Header({ isSidebarOpen, setIsSidebarOpen }) {
   const { pathname } = useLocation();
 
-  if(pathname.includes("login") || pathname.includes("signup")){
-    return
+  if (pathname.includes("login") || pathname.includes("signup")) {
+    return;
   }
   return (
     <div className="header">
       <header>
         <div className="img">
           <a href=" index.html">
-            <img
-              src={logo}
-              alt=""
-              width={100}
-            />
+            <img src={logo} alt="" width={100} />
           </a>
         </div>
         <div className="location">
@@ -116,7 +112,12 @@ function Header({isSidebarOpen, setIsSidebarOpen}) {
       </header>
       <div className="navbar">
         <div className="navbar-nav">
-          <div className="navbar-nav-list" onClick={() => {setIsSidebarOpen(true)}}>
+          <div
+            className="navbar-nav-list"
+            onClick={() => {
+              setIsSidebarOpen(true);
+            }}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"

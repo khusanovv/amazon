@@ -1,16 +1,17 @@
-import React, { useEffect, useState } from 'react'
-import axios from 'axios';
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 const Seemore = () => {
   const [products, setProducts] = useState([]);
   const [status, setStatus] = useState(null);
   useEffect(() => {
-    axios.get("https://seal-app-42lge.ondigitalocean.app/category/category-reel")  
-      .then(response => {
-          setProducts(response)
-      })
-  }, [])
+    axios
+      .get("https://seal-app-42lge.ondigitalocean.app/category/category-reel")
+      .then((response) => {
+        setProducts(response);
+      });
+  }, []);
 
-  console.log()
+  console.log();
   return (
     <div>
       {/* {
@@ -22,7 +23,7 @@ const Seemore = () => {
         )
       } */}
     </div>
-  )
-}
+  );
+};
 
-export default Seemore
+export default Seemore;
