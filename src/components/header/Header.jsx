@@ -3,7 +3,7 @@ import './Header.css';
 import logo from '../../assets/images/logo.png';
 import { useLocation } from 'react-router-dom';
 
-function Header() {
+function Header({isSidebarOpen, setIsSidebarOpen}) {
   const { pathname } = useLocation();
 
   if(pathname.includes("login") || pathname.includes("signup")){
@@ -116,7 +116,7 @@ function Header() {
       </header>
       <div className="navbar">
         <div className="navbar-nav">
-          <div className="navbar-nav-list">
+          <div className="navbar-nav-list" onClick={() => {setIsSidebarOpen(true)}}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"

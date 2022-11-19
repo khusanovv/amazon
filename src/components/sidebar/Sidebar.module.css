@@ -1,0 +1,84 @@
+.sidebar {
+	width: 380px;
+	height: 100vh;
+	background-color: #fff;
+	position: fixed;
+	top: 0;
+	left: -430px;
+	z-index: 10;
+	transition: 0.5s;
+}
+
+.active {
+	left: 0;
+	transition: 0.5s;
+}
+
+.close {
+	position: absolute;
+	top: 20px;
+	left: 385px;
+	font-size: 35px;
+}
+
+.avatarBox {
+	background-color: #232f3e;
+	height: 50px;
+	align-items: center;
+}
+
+.avatarLink {
+	margin: 0px 0px 0px 36px;
+	padding: 8px 0;
+	display: flex;
+	align-items: center;
+}
+
+.avatarLink h3 {
+	font-size: 19px;
+	font-weight: 700;
+}
+
+.avatar {
+	width: 27px;
+	height: 25px;
+}
+
+.sidebarContent {
+	height: 100vh;
+	overflow-y: scroll;
+	margin: 0px 0px 0px 36px;
+}
+
+.sidebarTitle {
+	padding: 15px 0;
+	padding-bottom: 5px;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 24px;
+	color: #111;
+}
+
+.sidebarMain{
+	padding: 0 20px 0 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	transition: .3s;
+}
+
+.sidebarMain:hover{
+	background-color: #eaeded;
+}
+
+.sidebarText {
+	padding: 13px 0;
+	font-size: 14px;
+	color: #111;
+}
+
+.sidebarNext{
+	width: 24px;
+	height: 20px;
+	color: #111;
+}

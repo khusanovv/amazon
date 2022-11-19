@@ -1,0 +1,35 @@
+.swiper {
+	margin: 30px 0;
+	background-color: #fff;
+	padding: 30px 10px 10px 10px;
+}
+
+.swiperHeading {
+	display: flex;
+	margin-bottom: 10px;
+   margin-left: 10px;
+}
+
+.swiperHeading h2 {
+	font-size: 21px;
+}
+
+.swiperLink {
+	margin: 5px 0 0 10px;
+	font-size: 14px;
+	text-decoration: none;
+	color: #007185;
+	cursor: pointer;
+}
+
+.swiperLink:hover {
+	text-decoration: underline;
+	color: #c7511f;
+	cursor: pointer;
+}
+
+.swiperBox img{
+   margin-bottom: 30px;
+   width: 157px;
+   height: 200px;
+}
