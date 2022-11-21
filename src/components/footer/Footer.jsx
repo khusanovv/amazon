@@ -36,7 +36,7 @@ const Footer = () => {
             </option>
           </select>
           <p className="lang__usd">USD - U.S. Dollar</p>
-          <p>United States</p>
+          <p className="lang__usd">United States</p>
         </div>
       </div>
     </>

@@ -8,6 +8,7 @@ import SwiperShop from "../swiperShop/SwiperShop";
 import SwiperCartoon from "../swiperCartoon/SwiperCartoon";
 import SwiperMovie from "../swiperMovie/SwiperMovie";
 import Footer from "../footer/Footer";
+import FooterBottom from "../footer-bottom/FooterBottom";
 
 const Main = () => {
   return (
@@ -44,6 +45,7 @@ const Main = () => {
         </main>
       </Container>
       <Footer />
+      <FooterBottom />
     </>
   );
 };
