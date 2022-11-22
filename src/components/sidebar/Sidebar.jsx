@@ -4,8 +4,9 @@ import { RiAccountCircleFill } from "react-icons/ri";
 import { MdOutlineNavigateNext } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { SidebarData } from "./SidebarData";
-
+import { v4 as uuidv4, v4 } from "uuid";
 const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
+  uuidv4();
   return (
     <div
       className={
@@ -34,7 +35,9 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
                 {item.entries.map((t, index) => {
                   return (
                     <Link className={c.sidebarMain}>
-                      <p className={c.sidebarText}>{t.title}</p>
+                      <p key={v4} className={c.sidebarText}>
+                        {t.title}
+                      </p>
                       <MdOutlineNavigateNext className={c.sidebarNext} />
                     </Link>
                   );

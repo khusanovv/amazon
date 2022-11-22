@@ -25,4 +25,10 @@ const BackToTop = () => {
   )
 }
 
-export { Container, BackToTop }
+const Overlay = ({setIsSidebarOpen})=>{
+  return (
+    <div onClick={() =>{setIsSidebarOpen(false)}} className="overlay"></div>
+  )
+}
+
+export { Container, BackToTop , Overlay}

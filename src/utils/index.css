@@ -1,18 +1,18 @@
-.container{
+.container {
   max-width: 1440px;
   margin: auto;
   padding: 0 1rem;
 }
 
-.container:has(.hero-banner){
+.container:has(.hero-banner) {
   padding: 0;
 }
 
-.container:has(main){
+.container:has(main) {
   max-width: 1500px !important;
 }
 
-.back-to-top{
+.back-to-top {
   width: 100%;
   padding: 15px 0;
   background-color: #485769;
@@ -20,4 +20,13 @@
   display: grid;
   place-items: center;
   cursor: pointer;
+}
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  background-color: #0000008a;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 4;
 }

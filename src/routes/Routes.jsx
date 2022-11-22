@@ -1,30 +1,34 @@
-import { Route } from 'react-router-dom';
+import { Route } from "react-router-dom";
 import Home from "./home/Home";
 import Login from "./login/Login";
 import SignUp from "./signup/SignUp";
-import CustomerService from './customer-service/CustomerServices'
-import Seemore from './seemore/Seemore';
+import CustomerService from "./customer-service/CustomerServices";
+import Seemore from "./seemore/Seemore";
+import Products from "./products/Products";
 
 const Routes = () => {
   return (
     <>
       <Route exact path="/">
-        <Home/>
+        <Home />
       </Route>
       <Route path="/login">
-          <Login/>
+        <Login />
       </Route>
       <Route path="/signup">
-          <SignUp/>
+        <SignUp />
       </Route>
       <Route path="/customer-service">
         <CustomerService />
       </Route>
-      <Route path="/seemore">
+      <Route exact path="/seemore">
         <Seemore />
       </Route>
+      <Route path="/seemore/products">
+        <Products />
+      </Route>
     </>
-  )
-}
+  );
+};
 
-export default Routes
+export default Routes;
