@@ -1,0 +1,22 @@
+.products-cart {
+  /* display: flex; */
+  color: black;
+  font-size: 14px;
+  width: 300px;
+}
+.products-cart h1 {
+  font-size: 16px;
+}
+.img {
+  max-width: 300px;
+}
+.cartt {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px;
+  gap: 30px;
+}
+.cartt__img {
+  width: 250px;
+}

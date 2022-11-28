@@ -31,7 +31,7 @@ console.log(productData)
     <div>
       {
         productData ?
-        <div>
+        <div className="products-cart">
           <img src={productData.image[0].url} alt="" />
           <h1>{productData.name}</h1>
           {
@@ -40,6 +40,7 @@ console.log(productData)
                <BsStarFill key={uuidv4()}/>
              ) : 
              <>
+             <h1>salom</h1>
              { 
                new Array(Math.floor(productData?.ratings)).fill("#").map(() => 
                    <BsStarFill key={uuidv4()}/>

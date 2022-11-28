@@ -5,6 +5,7 @@ import { MdOutlineNavigateNext } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { SidebarData } from "./SidebarData";
 import { v4 as uuidv4, v4 } from "uuid";
+import Main from "../main/Main";
 const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
   uuidv4();
   return (
@@ -20,7 +21,7 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
         }}
       />
       <div className={c.avatarBox}>
-        <Link className={c.avatarLink}>
+        <Link to={<Main />} className={c.avatarLink}>
           <RiAccountCircleFill
             style={{ width: "35px", height: "33px", marginRight: "10px" }}
           />
