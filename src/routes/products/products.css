@@ -1,11 +1,25 @@
 .products-cart {
-  /* display: flex; */
   color: black;
   font-size: 14px;
   width: 300px;
+  background-color: #fff;
+  padding: 10px;
+  transition: all 1s;
+}
+.cart-wrapper {
+  background-color: #fff;
+  width: 300px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 1px 3px 7px #00000076;
+  transition: all 0.4s ease-in;
+}
+.cart-wrapper:hover {
+  transform: scale(1.1);
 }
 .products-cart h1 {
   font-size: 16px;
+  margin: 20px 0;
 }
 .img {
   max-width: 300px;
@@ -13,7 +27,7 @@
 .cartt {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   padding: 50px;
   gap: 30px;
 }

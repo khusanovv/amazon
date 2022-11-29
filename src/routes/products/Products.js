@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import { BsStarFill, BsStarHalf } from 'react-icons/bs'
+import "./products.css"
 
 const Products = () => {
   
@@ -14,11 +15,12 @@ const Products = () => {
   }, [])
 
   return (
-    <div>
+    <div className='cartt'>
       {
         allProductsData.map(product => 
-          <Link to={`/seemore/products/${product._id}`} key={product._id}>
-            <img src={product?.image[0]?.url} alt="" />
+         <div className='cart-wrapper'>
+           <Link className='products-cart' to={`/seemore/products/${product._id}`} key={product._id}>
+            <img className='cartt__img' src={product?.image[0]?.url} alt="" />
             <h1>{product.name}</h1>
             {
             product.ratings % 1 === 0 ?
@@ -35,6 +37,7 @@ const Products = () => {
               </>
             }
           </Link>  
+         </div>
         )
       }
     </div>
