@@ -3,6 +3,7 @@ import Header from "./components/header/Header";
 import { BackToTop, Overlay } from "./utils";
 import Sidebar from "./components/sidebar/Sidebar";
 import { useState, useEffect } from "react";
+
 function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 

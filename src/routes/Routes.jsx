@@ -5,6 +5,7 @@ import SignUp from "./signup/SignUp";
 import CustomerService from "./customer-service/CustomerServices";
 import Seemore from "./seemore/Seemore";
 import Products from "./products/Products";
+import ProductInfo from "./products-info/productsInfo";
 
 const Routes = () => {
   return (
@@ -24,8 +25,11 @@ const Routes = () => {
       <Route exact path="/seemore">
         <Seemore />
       </Route>
-      <Route path="/seemore/products">
+      <Route exact path="/seemore/products">
         <Products />
+      </Route>
+      <Route path="/seemore/products/:productId">
+        <ProductInfo />
       </Route>
     </>
   );

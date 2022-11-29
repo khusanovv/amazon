@@ -1,14 +1,17 @@
-import React from "react";
+import { useState } from "react";
 import "./Header.css";
+import { Link } from "react-router-dom";
 import logo from "../../assets/images/logo.png";
 import { useLocation } from "react-router-dom";
 
-function Header({ isSidebarOpen, setIsSidebarOpen }) {
+function Header({ setIsSidebarOpen }) {
   const { pathname } = useLocation();
+  const [selectedOption, setSelectedOption] = useState("all");
 
   if (pathname.includes("login") || pathname.includes("signup")) {
     return;
   }
+
   return (
     <div className="header">
       <header>
@@ -38,12 +41,25 @@ function Header({ isSidebarOpen, setIsSidebarOpen }) {
         </div>
         <form action="post">
           <div className="form">
-            <select name="filter" className="filter">
-              <option value="all">All Departments</option>
-              <option value="arts">Arts & Crafts</option>
+            <select
+              name="filter"
+              className="filter"
+              style={
+                selectedOption.length <= 10
+                  ? { width: selectedOption.length * 14 + "px" }
+                  : { width: selectedOption.length * 8 + "px" }
+              }
+              onChange={(e) => {
+                setSelectedOption(e.target.value);
+              }}
+            >
+              <option value="all">All</option>
+              <option value="arts & crafts">Arts & Crafts</option>
               <option value="automotive">Automotive</option>
               <option value="baby">Baby</option>
-              <option value="beauty">Beauty & Personal Care</option>
+              <option value="beauty & personal Care">
+                Beauty & Personal Care
+              </option>
               <option value="books">Books</option>
             </select>
             <input type="text" id="text" className="form__input" />
@@ -73,7 +89,7 @@ function Header({ isSidebarOpen, setIsSidebarOpen }) {
           </a>
         </div>
         <div className="login">
-          <a href="index.html">
+          <Link to="/login">
             <p className="login__sign">Hello, sign in</p>
             <div className="accaunt">
               <p className="accound__sign">Account & Lists</p>
@@ -92,7 +108,7 @@ function Header({ isSidebarOpen, setIsSidebarOpen }) {
                 />
               </svg>
             </div>
-          </a>
+          </Link>
         </div>
         <div className="order">
           <p className="order__return">Returns</p>

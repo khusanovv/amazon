@@ -2,15 +2,15 @@ import "./Login.css";
 import loginLogo from "../../assets/images/login_logo.png";
 import { AiFillCaretDown } from "react-icons/ai";
 import { GrClose } from "react-icons/gr";
+import { Link } from "react-router-dom";
 
 const Login = () => {
-
   const boxStyleSignin = {
     width: "33%",
     height: "0",
     border: "0.5px solid gray",
   };
-  
+
   const mouseOverBtnSignin = () => {
     if (
       document.querySelector(".explaining-box-signin").style.display === "none"
@@ -95,9 +95,9 @@ const Login = () => {
             <span>New to Amazon?</span>
             <div style={boxStyleSignin}></div>
           </div>
-          <button className="create-account-signin">
+          <Link to="/signup" className="create-account-signin">
             Create your Amazon account
-          </button>
+          </Link>
         </div>
       </div>
     </div>

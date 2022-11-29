@@ -1,0 +1,61 @@
+.productInfo__wrapper {
+  display: flex;
+}
+
+.image__wrapper {
+  width: 100px;
+  height: 400px;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0;
+  padding: 10px;
+}
+
+.imageItem {
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+}
+
+.imageItem > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.mainImage__container {
+  width: auto;
+  height: 500px;
+  position: relative;
+  cursor: pointer;
+  background-color: red;
+  overflow: hidden;
+}
+
+.tracker {
+  width: 200px;
+  height: 200px;
+  background-color: rgba(30, 143, 255, 0.329);
+  position: absolute;
+  pointer-events: none;
+}
+
+.tracker > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(400%);
+}
+
+.mainImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.preview {
+  width: 400px;
+  height: 400px;
+  background-color: blue;
+}
