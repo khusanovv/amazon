@@ -84,7 +84,9 @@ const ProductInfo = () => {
             cursor: "zoom-out"}}  className={c.preview}></div>}
         </div>
         :
-        !loading ? <h1>Nothing found!</h1> : <p>Loading...</p>
+        !loading ?
+        <h1>Nothing found !</h1>
+          : <p>Loading...</p>
       }
     </div>
   )

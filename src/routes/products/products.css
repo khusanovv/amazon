@@ -15,7 +15,11 @@
   transition: all 0.4s ease-in;
 }
 .cart-wrapper:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
+}
+.nimadir {
+  display: flex;
+  padding: 20px;
 }
 .products-cart h1 {
   font-size: 16px;
@@ -33,4 +37,56 @@
 }
 .cartt__img {
   width: 250px;
+}
+
+.ProductRating {
+  width: 280px;
+  height: auto;
+}
+.ProductRating > svg {
+  font-size: 19px;
+  color: #c7511f;
+}
+.ProductRating p {
+  font-size: 14px;
+  margin-top: 5px;
+}
+.ProductRating h4 {
+  font-size: 14px;
+}
+.ProductRatingtitle {
+  margin-left: 10px;
+}
+.productList {
+  height: 25px;
+  display: flex;
+  align-items: center;
+}
+.productList input {
+  width: 17px;
+  height: 20px;
+  margin-right: 3px;
+}
+.btngroup {
+  width: 60%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.btngroup input {
+  width: 60px;
+  height: 30px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.btngroup button {
+  width: 40px;
+  height: 30px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background: transparent;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.148);
 }
