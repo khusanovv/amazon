@@ -81,7 +81,7 @@ export const FooterData = [
 			},
             {
 				title: "Let Us Help You",
-                links:[
+                links:[ 
                     {
                         title : "Amazon and COVID-19"
                     },

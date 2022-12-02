@@ -32,13 +32,17 @@ svg {
 
 .mainImage__container {
   width: auto;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   position: relative;
   cursor: pointer;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 1px 3px 7px #00000098;
   margin-top: 10px;
+}
+.mainImage__container :hover .wrapper {
+  display: none;
 }
 
 .tracker {
@@ -87,4 +91,25 @@ svg {
 }
 .nothing__found img {
   margin: 0 auto;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.cart__info {
+  background-color: #fff;
+}
+.cart__info > ul {
+  max-width: 600px;
+  /* padding: 0 30px; */
+  list-style: circle;
+  font-weight: bold;
+  margin-top: 20px;
+  background-color: #fff;
+}
+.cart__info > ul > li {
+  margin-top: 10px;
+  font-weight: 400;
+  padding: 0 10px;
 }

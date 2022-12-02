@@ -43,7 +43,7 @@
   width: 280px;
   height: auto;
 }
-.ProductRating > svg {
+.ProductRating > .rating-svg {
   font-size: 19px;
   color: #c7511f;
 }

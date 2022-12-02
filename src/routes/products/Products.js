@@ -16,7 +16,7 @@ const Products = () => {
   }, [])
 
   return (
-    
+
     <div className='nimadir'>
       <>
      <div className="ProductRating">
@@ -28,29 +28,29 @@ const Products = () => {
             <br />
             <h4>Customer Reviews</h4>
             <br />
-            <AiFillStar />
-            <AiFillStar />
-            <AiFillStar />
-            <AiFillStar />
-            <AiOutlineStar />
+            <AiFillStar className='rating-svg' />
+            <AiFillStar className='rating-svg' />
+            <AiFillStar  className='rating-svg' />
+            <AiFillStar className='rating-svg'/>
+            <AiOutlineStar  className='rating-svg' />
             <br />
-            <AiFillStar />
-            <AiFillStar />
-            <AiFillStar />
-            <AiOutlineStar />
-            <AiOutlineStar />
+            <AiFillStar  className='rating-svg' />
+            <AiFillStar  className='rating-svg' />
+            <AiFillStar  className='rating-svg' />
+            <AiOutlineStar className='rating-svg'/>
+            <AiOutlineStar  className='rating-svg'/>
             <br />
-            <AiFillStar />
-            <AiFillStar />
-            <AiOutlineStar />
-            <AiOutlineStar />
-            <AiOutlineStar />
+            <AiFillStar className='rating-svg' />
+            <AiFillStar className='rating-svg' />
+            <AiOutlineStar  className='rating-svg' />
+            <AiOutlineStar  className='rating-svg' />
+            <AiOutlineStar  className='rating-svg' />
             <br />
-            <AiFillStar />
-            <AiOutlineStar />
-            <AiOutlineStar />
-            <AiOutlineStar />
-            <AiOutlineStar />
+            <AiFillStar  className='rating-svg' />
+            <AiOutlineStar  className='rating-svg' />
+            <AiOutlineStar  className='rating-svg' />
+            <AiOutlineStar  className='rating-svg' />
+            <AiOutlineStar  className='rating-svg' />
             <br />
             <br />
             <h4>Featured Brands</h4>
